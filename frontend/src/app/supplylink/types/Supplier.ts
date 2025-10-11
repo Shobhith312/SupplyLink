@@ -19,11 +19,19 @@ export class Supplier {
     this.role = role;
   }
 
+<<<<<<< HEAD
   // displayInfo():void{
   //   console.log(`Supplier ID:${this.supplierId}`);
   //   console.log(`Supplier name:${this.supplierName}`);
   //   console.log(`email:${this.email}`);
   // }
+=======
+  displayInfo():void{
+    console.log(`Supplier ID:${this.supplierId}`);
+    console.log(`Supplier name:${this.supplierName}`);
+    console.log(`email:${this.email}`);
+  }
+>>>>>>> 7ab27733c82d2ae2ed7eef00b173f27aaaf6fec9
    
 }
 
