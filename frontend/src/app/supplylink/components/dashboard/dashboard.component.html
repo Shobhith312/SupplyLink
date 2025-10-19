@@ -153,7 +153,7 @@
                         <td>{{ product.productId }}</td>
                         <td>{{ product.productName }}</td>
                         <td>{{ product.quantity }}</td>
-                        <td>Price</td>
+                        <td>{{product.price}}</td>
                         <td>{{ product.warehouse.warehouseName }}</td>
                         <td class="actions">
                             <button class="btn btn-edit" (click)="editProduct(product)">Edit</button>
@@ -165,12 +165,12 @@
         </section>
     </ng-container>
 
-    <!-- Popup for Edit Product -->
+  
     <div class="popup-overlay" *ngIf="showProductPopup">
         <div class="popup-content">
             <div class="popup-header">
                 <h2>Edit Product</h2>
-                <button class="close-btn" (click)="closeProductPopup()">&#x2715;</button> <!-- Close Icon -->
+                <button class="close-btn" (click)="closeProductPopup()">&#x2715;</button> 
             </div>
 
             <form [formGroup]="productForm" (ngSubmit)="onProductFormSubmit()">

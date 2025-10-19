@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
             const { username, password } = this.loginForm.value;
             this.authService.login({ username, password }).subscribe({
                 next: (response) => {
-                    console.log(response);
+                    console.log("Login response from frontend login ",response.roles);
                     localStorage.setItem("token", response.token);
                     localStorage.setItem("role", response.roles);
                     localStorage.setItem("user_id", response.userId);
