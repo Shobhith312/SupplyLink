@@ -1,0 +1,197 @@
+
+### Register Supplier
+# POST http://localhost:5000/user/register
+# Content-Type: application/json
+
+# {
+#     "supplierName": "Teach",
+#     "email" : "contact@tech.com",
+#     "phone" : 9848484848,
+#     "address" : "Bangalore",
+#     "username":"Shobhith1234",
+#     "password" : "Shobhith@123",
+#     "role" : "ADMIN"
+# }
+
+### Login
+# POST http://localhost:5000/user/login
+# Content-Type: application/json
+
+# {
+#     "username":"Shobhith1234",
+#     "password" : "Shobhith@123"
+# }
+
+# ### Supplier CRUD
+# POST http://localhost:5000/supplier
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+
+# {
+#     "supplierName": "Teach",
+#      "email": "contact@tech.com",
+#      "phone": "9848484848",
+#      "address": "Bangalore",
+#      "username": "Shobhith1234",
+#      "password": "Shobhith@123",
+#      "role": "ADMIN"
+#  }
+
+# GET http://localhost:5000/supplier
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+
+# GET http://localhost:5000/supplier/1
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+
+# PUT http://localhost:5000/supplier/2
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+# Content-Type: application/json
+
+# {
+#     "supplierName": "Tech Updated",
+#     "email": "update@tech.com",
+#     "phone": "9876543210",
+#     "address": "Mumbai",
+#     "username": "ShobhithUpdated",
+#     "password": "Updated@123",
+#     "role": "ADMIN"
+# }
+
+# DELETE http://localhost:5000/supplier/1
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+
+# ### Warehouse CRUD
+# POST http://localhost:5000/warehouse
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+# Content-Type: application/json
+
+# {   "supplier" : {
+#      "supplierId": 6
+#      },
+#     "warehouseName": "Main Warehouse",
+#     "location": "Delhi",
+#     "capacity": 1000
+# }
+
+# GET http://localhost:5000/warehouse
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+
+# GET http://localhost:5000/warehouse/1
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+
+# PUT http://localhost:5000/warehouse/1
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+# Content-Type: application/json
+
+# {
+#     "supplierId": 6,
+#     "warehouseName": "Updated Warehouse",
+#     "location": "Noida",
+#     "capacity": 1200
+# }
+
+# DELETE http://localhost:5000/warehouse/1
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+
+# ### Product CRUD
+# POST http://localhost:5000/product
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aDEyMzQiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjExNTAwNTYsImV4cCI6MTc2MTIzNjQ1Nn0.76SEOHSXYNnx_8B1yfBpwohaWRD4rKLu6m8k3CXpzX-UAal_PMyZJ5fRVhVgEwpIfyxJFz7SAP2JxsYOqxRa5Q
+# Content-Type: application/json
+
+# {
+
+#     "warehouseId":1,
+#     "productName": "Laptop",
+#     "productDescription": "Gaming Laptop",
+#     "quantity": 10,
+#     "price": 85000
+# }
+
+# GET http://localhost:5000/product
+# Authorization: Bearer {jwt_token}
+
+# GET http://localhost:5000/product/1
+# Authorization: Bearer {jwt_token}
+
+# PUT http://localhost:5000/product/1
+# Authorization: Bearer {jwt_token}
+# Content-Type: application/json
+
+# {
+#     "warehouseId": 1,
+#     "productName": "Laptop",
+#     "productDescription": "Updated Gaming Laptop",
+#     "quantity": 15,
+#     "price": 90000
+# }
+
+# DELETE http://localhost:5000/product/1
+# Authorization: Bearer {jwt_token}
+
+# ### Insurance CRUD
+# POST http://localhost:5000/insurance
+# Authorization: Bearer {jwt_token}
+# Content-Type: application/json
+
+# {
+#     "shipmentId": 1,
+#     "insuranceProvider": "ICICI Lombard",
+#     "insuranceCoverageAmount": 500000
+# }
+
+# GET http://localhost:5000/insurance
+# Authorization: Bearer {jwt_token}
+
+# GET http://localhost:5000/insurance/1
+# Authorization: Bearer {jwt_token}
+
+# PUT http://localhost:5000/insurance/1
+# Authorization: Bearer {jwt_token}
+# Content-Type: application/json
+
+# {
+#     "shipmentId": 1,
+#     "insuranceProvider": "HDFC Ergo",
+#     "insuranceCoverageAmount": 750000
+# }
+
+# DELETE http://localhost:5000/insurance/1
+# Authorization: Bearer {jwt_token}
+
+# ### Shipment CRUD
+# POST http://localhost:5000/shipment
+# Authorization: Bearer {jwt_token}
+# Content-Type: application/json
+
+# {
+#     "productId": 1,
+#     "warehouseId": 1,
+#     "shipmentDate": "2025-10-22",
+#     "expectedDeliveryDate": "2025-10-30",
+#     "sourceLocation": "Bangalore",
+#     "destinationLocation": "Hyderabad",
+#     "status": "In Transit"
+# }
+
+# GET http://localhost:5000/shipment
+# Authorization: Bearer {jwt_token}
+
+# GET http://localhost:5000/shipment/1
+# Authorization: Bearer {jwt_token}
+
+# PUT http://localhost:5000/shipment/1
+# Authorization: Bearer {jwt_token}
+# Content-Type: application/json
+
+# {
+#     "productId": 1,
+#     "warehouseId": 1,
+#     "shipmentDate": "2025-10-22",
+#     "expectedDeliveryDate": "2025-10-31",
+#     "sourceLocation": "Bangalore",
+#     "destinationLocation": "Chennai",
+#     "status": "Delivered"
+# }
+
+# DELETE http://localhost:5000/shipment/1
+# Authorization: Bearer {jwt_token}
