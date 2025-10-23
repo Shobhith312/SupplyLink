@@ -1,0 +1,9 @@
+
+
+PUT http://localhost:5000/supplier/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJTaG9iaGl0aCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc2MDk2NDIyOCwiZXhwIjoxNzYxMDUwNjI4fQ.pyVtHMnWMw08BJcGuGS4vF7Ht_RbuyTe4UjM0BYb1uCRLa0TgZTpgQ_VwxvVamkb6gPbi2N7jA2Hc0uWDlDfPg
+
+{
+    "supplierName": "Shreyas"
+}
